@@ -39,6 +39,7 @@
     <script src="{{asset('assets/js/plugins/bootstrap.min.js') }}"></script>
     <script src="{{asset('assets/js/pcoded.min.js') }}"></script>
     <script src="{{asset('assets/js/plugins/apexcharts.min.js') }}"></script>
+    <script src="{{asset('assets/js/sweetalert2@11.js') }}"></script>
     <!-- custom-chart js -->
     <script src="{{asset('assets/js/pages/dashboard-main.js') }}"></script>
 

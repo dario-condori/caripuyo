@@ -4,7 +4,7 @@
         <a href="{{ route('resumen') }}" class="b-brand">
             <!-- ========   change your logo hear   ============ -->
             <img src="{{ asset('assets/images/auth/logo-caripuyo-blanco.png') }}" alt="" width="90%" class="logo">
-            <img src="assets/images/logo-icon.png" alt="" class="logo-thumb">
+            <img src="{{ asset('assets/images/logo-icon.png') }}" alt="" class="logo-thumb">
         </a>
         <a href="#!" class="mob-toggler">
             <i class="feather icon-more-vertical"></i>
@@ -75,7 +75,7 @@
                         <ul class="noti-body">
                             <li class="notification">
                                 <div class="media">
-                                    <img class="img-radius" src="assets/images/user/usuario.jpg" alt="Generic placeholder image">
+                                    <img class="img-radius" src="{{ asset('assets/images/user/usuario.jpg') }}" alt="Generic placeholder image">
                                     <div class="media-body">
                                         <p><strong>{{ Auth::user()->name }}</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>5 min</span></p>
                                         <p>Actualización de vencimiento</p>
@@ -84,7 +84,7 @@
                             </li>
                             <li class="notification">
                                 <div class="media">
-                                    <img class="img-radius" src="assets/images/user/usuario.jpg" alt="Generic placeholder image">
+                                    <img class="img-radius" src="{{ asset('assets/images/user/usuario.jpg') }}" alt="Generic placeholder image">
                                     <div class="media-body">
                                         <p><strong>Jefe unidad</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
                                         <p>Registro Artesanos</p>
@@ -105,7 +105,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right profile-notification">
                         <div class="pro-head">
-                            <img src="assets/images/user/usuario.jpg" class="img-radius" alt="User-Profile-Image">
+                            <img src="{{ asset('assets/images/user/usuario.jpg') }}" class="img-radius" alt="User-Profile-Image">
                             <span>{{ Auth::user()->name }}</span>
                         </div>
                         <ul class="pro-body">

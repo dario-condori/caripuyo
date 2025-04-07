@@ -16,11 +16,11 @@
                     <label>IPBI</label>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link ">
+                    <a href="{{ route('contribuyente.listado') }}" class="nav-link ">
                         <span class="pcoded-micon">
                             <i class="feather icon-home"></i>
                         </span>
-                        <span class="pcoded-mtext">Datos tributarios</span>
+                        <span class="pcoded-mtext">Contribuyentes</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -28,7 +28,15 @@
                         <span class="pcoded-micon">
                             <i class="feather icon-layout"></i>
                         </span>
-                        <span class="pcoded-mtext">Datos Administrativos</span>
+                        <span class="pcoded-mtext">Bienes Inmuebles</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link ">
+                        <span class="pcoded-micon">
+                            <i class="feather icon-layout"></i>
+                        </span>
+                        <span class="pcoded-mtext">Determinación del IPBI</span>
                     </a>
                 </li>
                 <li class="nav-item">

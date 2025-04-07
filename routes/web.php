@@ -12,6 +12,10 @@ Route::get('/', function () {
 Route::get('/resumen', [ResumenController::class, 'resumen'])->middleware(['auth', 'verified'])->name('resumen');
 Route::get('/contribuyente/listado', [ContribuyenteController::class, 'listado'])->middleware(['auth', 'verified'])->name('contribuyente.listado');
 Route::get('/contribuyente/nuevo', [ContribuyenteController::class, 'nuevo'])->middleware(['auth', 'verified'])->name('contribuyente.nuevo');
+Route::post('/contribuyente/guardar', [ContribuyenteController::class, 'guardar'])->middleware(['auth', 'verified'])->name('contribuyente.guardar');
+Route::delete('/contribuyente/eliminar/{contribuyente}', [ContribuyenteController::class, 'eliminar'])->middleware(['auth', 'verified'])->name('contribuyente.eliminar');
+Route::get('/contribuyente/editar/{id}', [ContribuyenteController::class, 'editar'])->middleware(['auth', 'verified'])->name('contribuyente.editar');
+Route::put('/contribuyente/actualizar/{contribuyente}', [ContribuyenteController::class, 'actualizar'])->middleware(['auth', 'verified'])->name('contribuyente.actualizar');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
