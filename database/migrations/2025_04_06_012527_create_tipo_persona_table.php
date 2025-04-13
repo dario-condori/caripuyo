@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('nombre_tipo_persona', 30)->comment('Nombre del tipo de persona');
             $table->timestamps();
+
+            $table->comment('Tabla paramétrica para almacenar tipos de personas natural o jurídico');
         });
     }
 

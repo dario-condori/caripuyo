@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('nombre_lugar_expedido', 30)->comment('Nombre del lugar de expedicion del documento');
             $table->string('sigla_lugar_expedido', 5)->comment('Sigla del lugar de expedicion del documento');
             $table->timestamps();
+
+            $table->comment('Tabla paramétrica para almacenar lugar de expedición del documento');
         });
     }
 

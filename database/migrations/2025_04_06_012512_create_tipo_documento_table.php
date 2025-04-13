@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('nombre_tipo_documento', 45)->comment('Nombre del documento');
             $table->string('sigla_tipo_documento', 5)->comment('Sigla del documento');
             $table->timestamps();
+
+            $table->comment('Tabla paramétrica para almacenar tipos de documentos');
         });
     }
 

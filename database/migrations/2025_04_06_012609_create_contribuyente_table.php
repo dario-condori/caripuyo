@@ -32,6 +32,8 @@ return new class extends Migration
             $table->foreign('lugar_expedido_id')->references('id')->on('lugar_expedido')->onUpdate('CASCADE')->onDelete('RESTRICT');
             $table->foreign('tipo_persona_id')->references('id')->on('tipo_persona')->onUpdate('CASCADE')->onDelete('RESTRICT');
             $table->foreign('usuario_id')->references('id')->on('users')->onUpdate('CASCADE')->onDelete('RESTRICT');
+
+            $table->comment('Tabla base para almacenar datos de los contribuyentes');
         });
     }
 
